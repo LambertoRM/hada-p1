@@ -1,1 +1,0 @@
-﻿Lamberto Ruiz Martínez
