@@ -14,7 +14,7 @@ namespace hada_p1
 
             do
             {
-                Console.WriteLine("¿De qué unidad partes, de segundos (s) o de minutos (m)? (pulse otra tecla para salir)");
+                Console.WriteLine("¿De qué unidad partes, de segundos (s), de minutos (m) o de horas (h)? (pulse otra tecla para salir)");
                 s = Console.ReadLine();
 
                 if (s == "s")
@@ -27,12 +27,19 @@ namespace hada_p1
                 }
                 else if (s == "m")
                 {
-                    Console.WriteLine("Introduce el número: ");
+                    Console.WriteLine("Introduce la cantidad: ");
                     string num = Console.ReadLine();
                     double seconds = HadaP1.Minutes2Seconds(double.Parse(num));
                     Console.WriteLine(seconds + " seconds.");
                 }
-            } while ((s == "s") || (s == "m"));
+                else if (s == "h")
+                {
+                    Console.WriteLine("Introduce la cantidad: ");
+                    string num = Console.ReadLine();
+                    double minutes = HadaP1.Hours2Minutes(double.Parse(num));
+                    Console.WriteLine(minutes + " minutes.");
+                }
+            } while ((s == "s") || (s == "m") || (s == "h"));
 
 
         }
