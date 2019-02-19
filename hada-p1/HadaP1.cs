@@ -36,5 +36,15 @@ namespace hada_p1
         {
             return m * 60;
         }
+
+        /// <summary>
+        /// Hours2Minutes is a method in the HadaP1 class.
+        /// </summary>
+        /// <param name="h">hours</param>
+        /// <returns>Returns minutes.</returns>
+        public static double Hours2Minutes(double h)
+        {
+            return h * 60;
+        }
     }
 }
